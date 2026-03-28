@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MemoriesX | Products</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 25px;
+    width: 260px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 20px;
+}
+
+button {
+    background: #00ffd5;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #00c9a7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="Memoriesx – 2.png" alt="MemoriesX Logo" style="width:120px; margin-bottom:15px;">
+    <h1>MemoriesX</h1>
+    <p>Creative Printing & Custom Products</p>
+</header>
+
+<div class="container">
+
+<div class="card"><h2>Frames</h2><button onclick="orderNow('Frames')">Buy Now</button></div>
+<div class="card"><h2>Cute Frame</h2><button onclick="orderNow('Cute Frame')">Buy Now</button></div>
+<div class="card"><h2>Kindergarten Books</h2><button onclick="orderNow('Kindergarten Books')">Buy Now</button></div>
+<div class="card"><h2>Stick Books New</h2><button onclick="orderNow('Stick Books New')">Buy Now</button></div>
+<div class="card"><h2>Customized Books</h2><button onclick="orderNow('Customized Books')">Buy Now</button></div>
+<div class="card"><h2>Greeting Cards</h2><button onclick="orderNow('Greeting Cards')">Buy Now</button></div>
+<div class="card"><h2>Invitation Cards</h2><button onclick="orderNow('Invitation Cards')">Buy Now</button></div>
+<div class="card"><h2>Visiting Cards</h2><button onclick="orderNow('Visiting Cards')">Buy Now</button></div>
+<div class="card"><h2>Flyers</h2><button onclick="orderNow('Flyers')">Buy Now</button></div>
+<div class="card"><h2>Brochures</h2><button onclick="orderNow('Brochures')">Buy Now</button></div>
+
+</div>
+
+<script>
+function orderNow(product) {
+    let message = "Hi, I am interested in " + product + ". Please share more details.";
+    let phone = "919036351517";
+    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
